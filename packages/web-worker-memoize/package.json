@@ -1,0 +1,17 @@
+{
+  "name": "web-worker-memoize",
+  "version": "0.0.1",
+  "private": false,
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && cp package.json dist/"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}

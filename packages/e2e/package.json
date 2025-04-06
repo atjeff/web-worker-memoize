@@ -1,0 +1,19 @@
+{
+  "name": "@repo/e2e",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "types": "wrangler types"
+  },
+  "dependencies": {
+    "web-worker-memoize": "workspace:*"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "latest",
+    "typescript": "latest",
+    "wrangler": "latest",
+    "vitest": "latest"
+  }
+}

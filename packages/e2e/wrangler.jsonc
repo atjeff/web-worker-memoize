@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "e2e",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-04-06",
+
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "Counter",
+        "name": "Counter"
+      }
+    ]
+  },
+
+  "migrations": [
+    {
+      "new_sqlite_classes": ["Counter"],
+      "tag": "v1"
+    }
+  ]
+}
