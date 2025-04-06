@@ -1,6 +1,7 @@
 import { DurableObject } from "cloudflare:workers";
 import { Cacheable } from "web-worker-memoize";
 
+// Durable Objects aren't a great example for this because of their built in caching
 export class Counter extends DurableObject {
   count = 0;
 
